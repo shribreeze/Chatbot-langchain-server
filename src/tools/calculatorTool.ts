@@ -3,7 +3,7 @@ export default {
     description: "Do complex math",
     async call(input: string) {
       try {
-        const result = eval(input); // Note: Use mathjs in production
+        const result = eval(input);
         return `Result: ${result}`;
       } catch {
         return "Invalid math expression.";
